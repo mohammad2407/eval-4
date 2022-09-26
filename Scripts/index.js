@@ -8,6 +8,10 @@ function setBooks(){
     let price = document.getElementById("price").value;
     let bookMark = "BookMark"
     let buy = "Buy"
+
+    if(inputName && inputAuthor && inputDesc && inputDate && category && price){
+        alert ("create successfully")
+    
     let bookObj = {
         inputName,
         inputAuthor,
@@ -19,6 +23,7 @@ function setBooks(){
         price,
     }
 
+    
     // let booksArr = []
     // booksArr.push(bookObj)
 //    let storageArr = JSON.parse( localStorage.getItem("book-list") );
@@ -28,6 +33,9 @@ function setBooks(){
 //    }
     
     localStorage.setItem("book-list", JSON.stringify([...JSON.parse(localStorage.getItem("book-list") || "[]"), bookObj]))
-
+    }
+    else{
+        alert("fill all the details")
+    }
 
 }
