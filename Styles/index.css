@@ -43,6 +43,12 @@ input {
     outline-color:  rgb(38, 190, 170);
 }
 
+th {
+    padding: 1%;
+    background-color: brown;
+    border: 1px solid black;
+    color: rgb(54, 42, 42);
+}
 form{
     display: flex;
     flex-direction: column;
