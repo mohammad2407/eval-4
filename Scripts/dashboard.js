@@ -94,7 +94,7 @@ function myBookmark(objData) {
         col.style.color = "white"
         col.style.padding = "10px"
         if (val == "Buy") {
-        col.style.background = "yellow"
+        col.style.background = "red"
           col.addEventListener("click", () => myFunction(obj));
         }
         else if(val == "BookMark"){
